@@ -1,0 +1,17 @@
+.list--alt {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list {
+  width: 90%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

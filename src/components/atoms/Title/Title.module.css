@@ -1,0 +1,28 @@
+.title{
+  display: block;
+  margin: 0;
+}
+.title--l{
+  margin: 15px;
+  font-size: 3rem;
+}
+.title--l-alt{
+  margin: 15px;
+  font-size: 3rem;
+  color: var(--text-secondary);
+}
+.title--m{
+  font-size: medium;
+}
+.title--s{
+  font-size: small;
+}
+
+@media (max-width: 900px) {
+  .title--l {
+    font-size: 2rem;
+  }
+  .title--l-alt {
+    font-size: 2rem;
+  }
+}

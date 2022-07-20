@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&family=Inconsolata:wght@400&family=Rajdhani:wght@400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+:root {
+  --main-bg-dark: #282828;
+  --card-bg-dark: #1c1c1c;
+
+  --main-bg-light: #ffffff;
+  --card-bg-light: #f8f8f8;
+
+  --text-primary-dark: #d9d9d9;
+  --text-secondary-dark: #9d9d9d;
+  --text-tertiary-dark: #5c5c5c;
+
+  --text-primary-light: #181818;
+  --text-secondary-light: #5c5c5c;
+  --text-tertiary-light: #747474;
+
+  --divider-dark: #323232;
+  --divider-light: #ededed;
+
+  --disabled-text-dark: #8b8b8b;
+  --disabled-text-light: #8a8a8a;
+
+  --primary: #108cff;
+  --primary-hover: #61bdff;
+
+  --main-font: 'Exo 2', sans-serif;
+  --alt-font: 'Rajdhani', sans-serif;
+  --info-font: 'Inconsolata', monospace;
+
+  --shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  --shadow-static: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+  --shadow-button: rgba(2, 97, 180, 0.48) 6px 2px 16px 0px, rgba(18, 63, 170, 0.8) -6px -2px 16px 0px;
+}
+
+[data-theme="dark"] {
+  --bg: var(--main-bg-dark);
+  --card-bg: var(--card-bg-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --text-tertiary: var(--text-tertiary-dark);
+  --divider: var(--divider-dark);
+  --disabled-text: var(--disabled-text-dark);
+}
+
+[data-theme="light"] {
+  --bg: var(--main-bg-light);
+  --card-bg: var(--card-bg-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --text-tertiary: var(--text-tertiary-light);
+  --divider: var(--divider-light);
+  --disabled-text: var(--disabled-text-light);
+}

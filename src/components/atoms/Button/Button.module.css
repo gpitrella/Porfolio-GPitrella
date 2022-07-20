@@ -1,0 +1,35 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary);
+  min-width: 1rem;
+  min-height: 1.5rem;
+  transition: all 0.8s;
+}
+.button:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--shadow-button);
+}
+
+.button--download {
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary);
+  border-radius: 10px;
+  min-width: 25%;
+  min-height: 2rem;
+  transform: scale(1.5);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  color: var(--text-primary);
+}
+
+.button--download:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--shadow-button);
+}

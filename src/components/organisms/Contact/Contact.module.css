@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__container {
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .contact {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__container {
+    width: 80%;
+  }
+}

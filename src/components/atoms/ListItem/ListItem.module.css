@@ -1,0 +1,19 @@
+.item {
+  list-style: "▹ ";
+  font-size: small;
+  margin-left: 15px;
+}
+.item-alt {
+  width: max-content;
+  font-family: var(--alt-font);
+  font-size: x-small;
+  overflow: hidden;
+  margin: 0 10px;
+  list-style: none;
+}
+
+@media (max-width: 780px) {
+  .item {
+    font-size: x-small;
+  }
+}

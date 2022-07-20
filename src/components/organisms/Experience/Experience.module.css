@@ -1,0 +1,40 @@
+.exp {
+  margin: 50px 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  gap: 15px;
+  align-content: center;
+  justify-items: center;
+}
+
+.exp__content {
+  width: calc(100% - 60px);
+  min-height: 16.5rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-static);
+  transition: all 0.5s;
+  padding: 15px 30px;
+}
+
+
+@media (max-width: 1080px) {
+  .exp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .exp {
+    font-size: x-small;
+    width: 100%;
+    padding: 0;
+  }
+}

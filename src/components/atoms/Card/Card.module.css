@@ -1,0 +1,18 @@
+.card {
+  min-width: 75%;
+  min-height: 16.5rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-static);
+  transition: all 0.5s;
+}
+.card:hover{
+  box-shadow: var(--shadow);
+}
+@media (max-width: 870px) {
+  .card{
+    width: 80%;
+  }
+}
