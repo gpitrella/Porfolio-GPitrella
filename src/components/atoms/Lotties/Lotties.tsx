@@ -12,7 +12,7 @@ type Props = {
   type: string;
 };
 
-const Icons = ({ width, type }: Props) => {
+const Lotties = ({ width, type }: Props) => {
   return (
     <>
       <img
@@ -36,11 +36,11 @@ const Icons = ({ width, type }: Props) => {
         style={{
           width: `${parseInt(width)}px`
         }}
-        className={classes.icon}
+        className={classes.lottie}
         alt={`${type} icon`}
       />
     </>
   );
 };
 
-export default Icons;
+export default Lotties;

@@ -72,13 +72,11 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
               <span onClick={() => scrollIntoView(navRefs.contactRef)}>
                 Contact
               </span>
-              <Button onClick={themeHandler}>
-                {ctx.dark ? (
-                  <Icons type="dark" width="23px" />
-                ) : (
-                  <Icons type="light" width="23px" />
-                )}
-              </Button>
+              {ctx.dark ? (
+                <span onClick={themeHandler}><Icons type="dark" width="30px"/></span>
+              ) : (
+                <span onClick={themeHandler}><Icons type="light" width="30px"/></span>
+              )}
             </motion.div>
           ) : (
             <motion.div
