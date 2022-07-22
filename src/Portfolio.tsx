@@ -7,8 +7,7 @@ import Icon from "./components/atoms/IconLogo/IconLogo";
 import "./Portfolio.css";
 import Body from "./components/templates/Body/Body";
 import Footer from "./components/templates/Footer/Footer";
-import Lotties from "./components/atoms/Lotties/Lotties";
-import Background from "./components/atoms/Background/Background";
+// import Background from "./components/atoms/Background/Background";
 
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState<boolean>();
@@ -52,7 +51,7 @@ const Portfolio = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-              <div className="background"><Background/></div>
+              {/* <div className="background"><Background/></div> */}
               <NavBar
                 width={widthCondition}
                 theme={theme}

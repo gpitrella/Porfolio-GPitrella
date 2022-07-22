@@ -30,6 +30,7 @@
   width: 40%;
 }
 .content__right__content{
+  padding-right: 145px;
   font-family: var(--alt-font);
   font-weight: bold;
   display: flex;

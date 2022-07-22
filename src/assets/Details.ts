@@ -51,18 +51,16 @@ export const ProjectsList: IProjectsList[] = [
 ];
 
 export const SkillList: string[] = [
+  "HTML / CSS",
   "JavaScript (ES6+) ",
   "TypeScript",
-  "ReactJS and Next JS",
+  "ReactJS",
   "Node.js",
   "Express JS",
-  "Git",
+  "Git / GitHub",
   "Redux",
-  "CI/CD",
-  "NoSQL and SQL Data bases (MongoDB, Firebase, Postgre",
-  "Framer Motion",
-  "UI/UX Libraries (Material UI,TailwindCSS",
-  "Design Patterns (Atomic Design, BEM Design",
+  "NoSQL and SQL Data bases (Postgre)",
+  "UI/UX Libraries (Material UI)",
 ];
 
 export interface IDetails {
@@ -85,17 +83,24 @@ export interface IAboutMe {
 export const AboutMe: IDetails = {
   title: "About Me",
   text: [
-    `Hello! My name is Ricardo and I am Venezuelan-base Web Developer. I am
-  currently working remotely as a freelancer for clients all over the
-  world. My interest in web development started back in 2017, when I
-  wondered how the internet work and how web pages worked, those questions
-  lead me to a Udemy course, since then I love the web development and
-  coding in general.`,
-    `Fast-forward to today, and I’ve had the privilege of working at a
-  start-up, I'm currently working on a freelance projects. I've also made
-  the CISCO CCNA, CISCO CyberOPS, LACNIC advanced BGP, LACNIC IPV6 courses
-  and LACNIC Network Management courses and certifications.`,
-    `I have over one year of experience working with technologies like:`,
+    `I am a Full Stack Developer graduated in Industrial Engineering.
+    Experience working with JavaScript, NodeJS, React, Sequelize,
+    SQL among other technologies in the sector. Develop an E-commerce that surpasses
+    500 successful sales in the first three months. work on
+    Toyota Argentina for more than 7 years which strengthened my analytical thinking,
+    effective problem solving, teamwork, communication and continuous improvement.`,
+    `I have experience working with technologies like:`,
+  //   `Hello! My name is Ricardo and I am Venezuelan-base Web Developer. I am
+  // currently working remotely as a freelancer for clients all over the
+  // world. My interest in web development started back in 2017, when I
+  // wondered how the internet work and how web pages worked, those questions
+  // lead me to a Udemy course, since then I love the web development and
+  // coding in general.`,
+  //   `Fast-forward to today, and I’ve had the privilege of working at a
+  // start-up, I'm currently working on a freelance projects. I've also made
+  // the CISCO CCNA, CISCO CyberOPS, LACNIC advanced BGP, LACNIC IPV6 courses
+  // and LACNIC Network Management courses and certifications.`,
+  //   `I have over one year of experience working with technologies like:`,
   ],
 };
 

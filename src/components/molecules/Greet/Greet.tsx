@@ -9,20 +9,28 @@ import './Greet.css'
 const Greet = () => {
   
   const {text} = useTypewriter({
-    words: ['Hi!', 'Hello!', 'Salut!', 'Hola!', 'Salam!', 'Hallo!', 'Ciao!', 'Olá!', 'Hej!', 'Aloha!'],
+    words: ['Hi! Welcome', 'Hello! Welcome', 'Salut!', 'Hola! Welcome'],
     loop: false, // Infinit
+    typeSpeed: 200,
+    deleteSpeed: 200,
+    delaySpeed: 1000,
   })
   return (
-    <>
-      <span className="color"><Title size="large" content={`${text}`}/></span>
+    <div className="containerGreet">
+      <div className="color">
+        <h1 className="colorh1">{`${text}`}</h1>
+      </div>
       <div className="maindiv">
-        <Title size="large" content={`I'm Gabriel Pitrella`} /><Title size="large-alt" content="Full Stack Developer" />
+        <Title size="large" content={`I'm Gabriel Pitrella`} />
+        {/* <Title size="large-alt" content="Full Stack Developer" /> */}
       </div>
       <Text type={4}>
-          I'm Full Stack Developer passionate about improve the world with the new technology and 
-          build products that generated a real impact to its users.
+          FULL STACK DEVELOPER passionate about improve the world with the new 
       </Text>
-    </>
+      <Text type={4}>
+          technology and build products that generated a real impact to its users.
+      </Text>
+    </div>
   );
 };
 
