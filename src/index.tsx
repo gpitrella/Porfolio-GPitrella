@@ -10,6 +10,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <ThemeProvider>
-    <Portfolio />
+      <Portfolio />
   </ThemeProvider>
 );

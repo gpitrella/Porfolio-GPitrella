@@ -1,0 +1,8 @@
+.color {
+    color: red;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: row;
+}

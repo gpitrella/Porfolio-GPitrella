@@ -2,18 +2,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { INavRefProps } from "./navbarTypes";
 import { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
-import Icon from "../../atoms/IconLogo/IconLogo";
 import classes from "./NavBar.module.css";
 import Button from "../../atoms/Button/Button";
 import Icons from "../../atoms/Icons/Icons";
+import Lotties from "../../atoms/Lotties/Lotties";
 import SideBar from "../../molecules/SideBar/SideBar";
 
 const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
   const ctx = useContext(ThemeContext);
   const [showNavBar, setShowNavBar] = useState<boolean>(false);
   const [showSideBar, setShowSideBar] = useState<boolean>(false);
-  const logoHeight = 35;
-  const logoWidth = 30;
 
   const showNavBarBackground = () => {
     window.scrollY > 5 ? setShowNavBar(true) : setShowNavBar(false);
@@ -45,14 +43,15 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
     >
       <section className={classes.navbar__content}>
         <div className={classes.content__left}>
-          <Icon
+          <h2 className={classes.gp}>GP</h2>
+          {/* <Icon
             theme={theme}
             height={logoHeight}
             width={logoWidth}
             onClick={() => {
               window.location.reload();
-            }}
           />
+            }} */}
         </div>
         <motion.div className={classes.content__right}>
           {width > 780 ? (
@@ -73,9 +72,9 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
                 Contact
               </span>
               {ctx.dark ? (
-                <span onClick={themeHandler}><Icons type="dark" width="30px"/></span>
+                <span onClick={themeHandler}><Lotties type="dark" width="35px"/></span>
               ) : (
-                <span onClick={themeHandler}><Icons type="light" width="30px"/></span>
+                <span onClick={themeHandler}><Lotties type="light" width="35px"/></span>
               )}
             </motion.div>
           ) : (
@@ -88,13 +87,11 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
               <Button onClick={showSideBarHandler}>
                 <Icons type="menu" width="20px" />
               </Button>
-              <Button onClick={themeHandler}>
-                {ctx.dark ? (
-                  <Icons type="dark" width="23px" />
-                ) : (
-                  <Icons type="light" width="23px" />
-                )}
-              </Button>
+              {ctx.dark ? (
+                <span onClick={themeHandler}><Lotties type="dark" width="30px"/></span>
+              ) : (
+                <span onClick={themeHandler}><Lotties type="light" width="30px"/></span>
+              )}
             </motion.div>
           )}
           <AnimatePresence exitBeforeEnter>

@@ -7,6 +7,8 @@ import Icon from "./components/atoms/IconLogo/IconLogo";
 import "./Portfolio.css";
 import Body from "./components/templates/Body/Body";
 import Footer from "./components/templates/Footer/Footer";
+import Lotties from "./components/atoms/Lotties/Lotties";
+import Background from "./components/atoms/Background/Background";
 
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState<boolean>();
@@ -50,16 +52,17 @@ const Portfolio = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <NavBar
-              width={widthCondition}
-              theme={theme}
-              navRefs={navRefs}
-              scrollIntoView={scrollIntoViewHandler}
-            />
-            <div className="content">
-              <Body theme={theme} navRefs={navRefs} />
-              <Footer />
-            </div>
+              <div className="background"><Background/></div>
+              <NavBar
+                width={widthCondition}
+                theme={theme}
+                navRefs={navRefs}
+                scrollIntoView={scrollIntoViewHandler}
+              />
+              <div className="content">
+                <Body theme={theme} navRefs={navRefs} />
+                <Footer />
+              </div>
           </motion.div>
         )}
       </AnimatePresence>

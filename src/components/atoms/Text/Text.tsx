@@ -14,6 +14,8 @@ const Text = ({ children, type = 1 }: Props) => {
           ? classes["text--alt-2"]
           : type === 3
           ? classes["text--alt-3"]
+          : type === 4
+          ? classes["text--alt-4"]
           : classes.text
       }
     >

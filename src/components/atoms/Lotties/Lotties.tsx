@@ -1,11 +1,6 @@
-import Folder from "../../../assets/folder.svg";
-import Launch from "../../../assets/export.svg";
-import Dark from "../../../assets/dark.gif";
-import Light from "../../../assets/light.gif";
-import LinkedIn from "../../../assets/linkedin.svg"
-import GitHub from "../../../assets/github.svg"
-import Menu from "../../../assets/menu.svg"
-import classes from "./Icons.module.css"
+import Lottie from 'react-lottie';
+import Light from '../../../assets/light.json';
+import Dark from '../../../assets/dark.json';
 
 type Props = {
   width: string;
@@ -13,33 +8,26 @@ type Props = {
 };
 
 const Lotties = ({ width, type }: Props) => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: type === 'light' 
+                          ? Light 
+                          : type === 'dark'
+                          ? Dark
+                          : '',
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
-    <>
-      <img
-        src={
-          type === "folder"
-            ? Folder
-            : type === "launch"
-            ? Launch
-            : type === "dark"
-            ? Dark
-            : type === "light"
-            ? Light
-            : type === "linkedin"
-            ? LinkedIn
-            : type === "git"
-            ? GitHub
-            : type === "menu"
-            ? Menu
-            : ""
-        }
-        style={{
-          width: `${parseInt(width)}px`
-        }}
-        className={classes.lottie}
-        alt={`${type} icon`}
+    <div>
+      <Lottie 
+	      options={defaultOptions}
+        width={`${parseInt(width)}px`}
       />
-    </>
+    </div>
   );
 };
 

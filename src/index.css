@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&family=Inconsolata:wght@400&family=Rajdhani:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&family=Inconsolata:wght@400&family=Rajdhani:wght@400&family=Rubik:wght@300&display=swap');
+
 
 body {
   margin: 0;
@@ -31,7 +32,7 @@ body {
   --primary-hover: #61bdff;
 
   --main-font: 'Exo 2', sans-serif;
-  --alt-font: 'Rajdhani', sans-serif;
+  --alt-font: 'Rubik', sans-serif;
   --info-font: 'Inconsolata', monospace;
 
   --shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
