@@ -1,10 +1,11 @@
 import React from "react";
 import { AboutMe } from "../../../assets/Details";
-import Image from "../../atoms/Image/Image";
+// import Image from "../../atoms/Image/Image";
 import Info from "../../molecules/Info/Info";
 import Skills from "../../molecules/Skills/Skills";
 import classes from "./About.module.css";
 import GoTo from "../../molecules/GoTo/GoTo";
+import Lotties from "../../atoms/Lotties/Lotties";
 
 type Props = {
   profileImage: string;
@@ -24,7 +25,8 @@ const About = React.forwardRef<HTMLElement, Props>(
           <GoTo link={resumeLink}>My Resume</GoTo>
         </div>
         <div className={classes.pic}>
-          <Image image={profileImage} />
+          <Lotties type="person" width="350px"/>
+          {/* <Image image={profileImage} /> */}
         </div>
       </section>
     );

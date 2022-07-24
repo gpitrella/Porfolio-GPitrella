@@ -12,7 +12,7 @@ const Greet = () => {
     words: ['Hi! Welcome', 'Hello! Welcome', 'Salut!', 'Hola! Welcome'],
     loop: false, // Infinit
     typeSpeed: 200,
-    deleteSpeed: 200,
+    deleteSpeed: 100,
     delaySpeed: 1000,
   })
   return (

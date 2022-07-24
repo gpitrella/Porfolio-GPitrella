@@ -72,9 +72,9 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
                 Contact
               </span>
               {ctx.dark ? (
-                <span onClick={themeHandler}><Lotties type="dark" width="35px"/></span>
-              ) : (
                 <span onClick={themeHandler}><Lotties type="light" width="35px"/></span>
+              ) : (
+                <span onClick={themeHandler}><Lotties type="dark" width="35px"/></span>
               )}
             </motion.div>
           ) : (

@@ -7,6 +7,7 @@ import CardNav from "../../molecules/CardNav/CardNav";
 import Card from "../../atoms/Card/Card";
 import Header from "../../atoms/Header/Header";
 import List from "../../molecules/List/List";
+import IconSkills from "../../organisms/IconSkills/IconSkills";
 
 type Props = {};
 
@@ -17,6 +18,7 @@ const Experience = React.forwardRef<HTMLElement>((props: Props, ref) => {
       <Header>
         <Title content="Where I’ve Worked" />
       </Header>
+      <IconSkills />
       <Card alt={true}>
         <>
           <CardNav

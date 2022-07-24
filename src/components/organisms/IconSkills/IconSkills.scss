@@ -1,0 +1,161 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+1024px - 1366px     iPad Pro
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    // Phone-xs
+    @if $breakpoint == phone-xs {
+      @media (max-width: 20em) {
+        @content;
+      } //0 - 320px
+    }
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //0 - 600px
+    }
+    // Table Portrait
+    @if $breakpoint == tab-port {
+      @media (max-width: 56.25em) {
+        @content;
+      } //900px
+    }
+    //iPad Pro
+    @if $breakpoint == pad-pro {
+      @media (max-width: 64em) {
+        @content;
+      } //1024px
+    }
+    // Table Landscape
+    @if $breakpoint == tab-land {
+      @media (max-width: 75em) {
+        @content;
+      } //1200px
+    }
+    // Big Desktop
+    @if $breakpoint == big-desktop {
+      @media (min-width: 112.5em) {
+        @content;
+      } //1800px +
+    }
+  }
+
+
+#skills {
+    background-color: #008a83;
+    background-image: linear-gradient(
+    135deg,
+    #008a83 0%,
+    #ae00cd 100%
+  );
+  color: #fff;
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 90%);
+  padding-bottom: 10%;
+
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .skills-wrapper {
+    @include respond(phone) {
+        padding-bottom: 5rem;
+        display: column;
+    }
+
+    &__container {  
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+
+        @include respond(tab-port) {
+            display: grid;
+            padding-bottom: 6.4rem;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+        }
+        
+        @include respond(tab-land) {
+            height: 100%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column ;
+        }
+
+        @include respond(pad-pro) {
+            
+        }
+    }
+
+    &__item {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.5rem;
+
+        @include respond(phone) {
+            display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.5rem;
+        }
+        
+        &:hover {
+            transform: translateY(-5px);
+            filter: drop-shadow(5px 5px 5px black);
+          }
+    }
+
+    &__item,
+    p {
+        &:hover,
+        &:active {
+            color: rgb(43, 204, 169);   
+        }
+    }
+
+    &__icon {
+        filter: saturate(0%) brightness(100%) contrast(100%);
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+        &:hover {
+            transform: translateY(-10px);
+            filter:unset;
+          }
+    }
+    
+    &__size-icon {
+        width: 110px;
+        height: 110px;
+
+        @include respond(phone) {
+            width: 150px;
+            height: 150px;
+        }
+
+        @include respond(tab-land) {
+            height: 150px;
+            width: 150px;
+        }
+    }
+  }
+}
