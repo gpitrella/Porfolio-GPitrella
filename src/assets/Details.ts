@@ -7,6 +7,7 @@ export interface Experience {
 export interface IProjectsList {
   repo: string;
   live: string;
+  image: string;
   title: string;
   description: string;
   techs: string[];
@@ -14,19 +15,21 @@ export interface IProjectsList {
 
 export const ProjectsList: IProjectsList[] = [
   {
-    repo: "https://github.com/ricardovera76/notes-app.git",
-    live: "https://notesapp-rv.vercel.app",
-    title: "Notes App",
+    repo: "",
+    live: "https://laquastore.com.ar",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686749/LAQUAStore_o8rpea.jpg",
+    title: "Beauty E-commerce",
     description: `In this Web-App, you can store and create your notes, the used
     technologies are: React.js, Framer Motion which is used for
     handling the animations, React-Router-Dom to handle page routing,
     CSS Modules, Lottie for Animated Icons, Firebase Auth for
     authentication and Firestore as a NoSQL database.`,
-    techs: ["React JS", "Redux", "Firebase", "Framer Motion", "React-Lottie"],
+    techs: ["WordPress", "MercadoPago", "Google Ads", "Google Analytics", "Facebook Ads"],
   },
   {
     repo: "https://github.com/ricardovera76/Hacker-news.git",
     live: "https://hacker-news-rv.vercel.app",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686749/TechMarket_dpnvkm.jpg",
     title: "Hacker News",
     description: `In This Web-App you can read, see and save all the news related to
       the main JS Frameworks / Libraries like Angular, React JS and VUE.`,
@@ -35,19 +38,11 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/ricardovera76/portfolio.git",
     live: "https://ricardo-vera-portfolio.vercel.app",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686750/AppVideogames_cft0gu.jpg",
     title: "Ricardo Vera Portfolio",
     description: `In This Web-App you can checkout my portfolio, and also other projects I've worked on in the past years`,
     techs: ["React JS", "TypeScript", "Framer-Motion"],
-  },
-  {
-    repo: "https://github.com/ricardovera76/Next-meetups-app.git",
-    live: "https://react-meetups-rv.vercel.app",
-    title: "React Meetups",
-    description: `In this Web-App, people can set and store cool places to meet with
-      each other, the technologies used are: Next.js as the main JS
-      framework, CSS Modules and MongoDB as NoSQL database.`,
-    techs: ["Next JS", "Mongo DB", "CSS Modules"],
-  },
+  }
 ];
 
 export const SkillList: string[] = [

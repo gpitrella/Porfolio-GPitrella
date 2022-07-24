@@ -16,10 +16,10 @@ const Experience = React.forwardRef<HTMLElement>((props: Props, ref) => {
   return (
     <section ref={ref} className={classes.exp}>
       <Header>
-        <Title content="Where I’ve Worked" />
+        <Title content="Tech Skills" />
       </Header>
       <IconSkills />
-      <Card alt={true}>
+      {/* <Card alt={true}>
         <>
           <CardNav
             content={AllExperience}
@@ -46,7 +46,7 @@ const Experience = React.forwardRef<HTMLElement>((props: Props, ref) => {
             </motion.div>
           </AnimatePresence>
         </>
-      </Card>
+      </Card> */}
     </section>
   );
 });
