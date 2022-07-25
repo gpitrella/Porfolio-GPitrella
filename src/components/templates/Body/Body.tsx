@@ -11,12 +11,13 @@ import { SkillList } from "../../../assets/Details";
 interface Props {
   theme: string;
   navRefs: navRefs;
+  scrollIntoView: (targetRef: React.RefObject<HTMLElement>) => void;
 }
 
-const Body = ({ navRefs }: Props) => {
+const Body = ({ navRefs, scrollIntoView }: Props) => {
   return (
     <div className={classes.section}>
-      <Main />
+      <Main ref={navRefs.mainRef} navRefs={navRefs} scrollIntoView={scrollIntoView}/>
       <About ref={navRefs.aboutRef} profileImage={ProfileImage} skillList={SkillList}/>
       <Experience ref={navRefs.experienceRef} />
       <Work ref={navRefs.workRef} />

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Button from "../../atoms/Button/Button";
+// import Button from "../../atoms/Button/Button";
 import classes from "./SideBar.module.css";
 import { navRefs } from "../../organisms/NavBar/navbarTypes";
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 
 type Props = {
   navRefs: navRefs;
@@ -21,7 +23,16 @@ function SideBar({ showSidebar, mobileSidebar, navRefs }: Props) {
     >
       <div className={classes.sidebar__items}>
         <div className={classes.sidebar__item}>
-          <Button onClick={showSidebar}>close</Button>
+            <IconButton
+              edge="start"
+              sx={{ fontSize: "40px", marginTop: "1.5rem", marginRight: "1.5rem" }}
+              color="inherit"
+              aria-label="menu"
+              onClick={showSidebar}
+            >
+              <CloseIcon />
+            </IconButton>
+          {/* <Button onClick={showSidebar}>close</Button> */}
         </div>
         <span
           className={classes.sidebar__item}
@@ -33,13 +44,13 @@ function SideBar({ showSidebar, mobileSidebar, navRefs }: Props) {
           className={classes.sidebar__item}
           onClick={() => mobileSidebar(navRefs.experienceRef)}
         >
-          Experience
+          Soft Skills
         </span>
         <span
           className={classes.sidebar__item}
           onClick={() => mobileSidebar(navRefs.workRef)}
         >
-          Work
+          Projects
         </span>
         <span
           className={classes.sidebar__item}

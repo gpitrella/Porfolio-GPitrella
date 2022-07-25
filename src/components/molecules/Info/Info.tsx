@@ -2,12 +2,14 @@ import React from "react";
 import Header from "../../atoms/Header/Header";
 import Title from "../../atoms/Title/Title";
 import Text from "../../atoms/Text/Text";
+
 type Props = {
   title: string;
   text: string[] | string;
   type?: number;
   isCard?: boolean;
 };
+
 const Info: React.FC<Props> = ({
   text,
   title,

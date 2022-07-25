@@ -5,6 +5,7 @@ export type INavRefProps =  {
   scrollIntoView: (targetRef: React.RefObject<HTMLElement>) => void;
 }
 export interface navRefs {
+  mainRef: React.RefObject<HTMLElement>;
   aboutRef: React.RefObject<HTMLElement>;
   workRef: React.RefObject<HTMLElement>;
   experienceRef: React.RefObject<HTMLElement>;

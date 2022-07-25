@@ -2,6 +2,11 @@
   display: block;
   margin: 0;
 }
+.main-title{
+  margin: 15px;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
 .title--l{
   margin: 15px;
   font-size: 3rem;

@@ -4,25 +4,25 @@ import Title from "../../atoms/Title/Title";
 // import TypewriterElement from "../../atoms/Typewriter/Typewriter";
 import { useTypewriter } from 'react-simple-typewriter'
 // import { Cursor } from "../../atoms/Cursor/Cursor";
-import './Greet.css'
+import './Greet.scss'
 
 const Greet = () => {
   
   const {text} = useTypewriter({
-    words: ['Hi! Welcome', 'Hello! Welcome', 'Salut!', 'Hola! Welcome'],
+    words: ['Hi! Welcome', 'Hello! Salutes', 'Bonjour! Accueillir', 'Hola! Saludos'],
     loop: false, // Infinit
     typeSpeed: 200,
-    deleteSpeed: 100,
-    delaySpeed: 1000,
+    deleteSpeed: 80,
+    delaySpeed: 1100,
   })
+
   return (
     <div className="containerGreet">
       <div className="color">
         <h1 className="colorh1">{`${text}`}</h1>
       </div>
       <div className="maindiv">
-        <Title size="large" content={`I'm Gabriel Pitrella`} />
-        {/* <Title size="large-alt" content="Full Stack Developer" /> */}
+        <Title size="main-title" content={`I'm Gabriel Pitrella`} />
       </div>
       <Text type={4}>
           FULL STACK DEVELOPER passionate about improve the world with the new 

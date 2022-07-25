@@ -9,6 +9,9 @@ type Props = {
 const Title = ({ size, content }: Props) => {
   let cssClass;
   switch (size) {
+    case "main-title":
+      cssClass = classes["main-title"];
+      break;
     case "large":
       cssClass = classes["title--l"];
       break;
