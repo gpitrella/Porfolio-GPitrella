@@ -44,7 +44,7 @@ function SideBar({ showSidebar, mobileSidebar, navRefs }: Props) {
           className={classes.sidebar__item}
           onClick={() => mobileSidebar(navRefs.experienceRef)}
         >
-          Soft Skills
+          Tech Skills
         </span>
         <span
           className={classes.sidebar__item}

@@ -4,7 +4,7 @@ import Title from "../../atoms/Title/Title";
 // import TypewriterElement from "../../atoms/Typewriter/Typewriter";
 import { useTypewriter } from 'react-simple-typewriter'
 // import { Cursor } from "../../atoms/Cursor/Cursor";
-import './Greet.scss'
+import classes from'./Greet.module.scss'
 
 const Greet = () => {
   
@@ -17,11 +17,11 @@ const Greet = () => {
   })
 
   return (
-    <div className="containerGreet">
-      <div className="color">
-        <h1 className="colorh1">{`${text}`}</h1>
+    <div className={classes.containerGreet}>
+      <div className={classes.color}>
+        <h1 className={classes.colorh1}>{`${text}`}</h1>
       </div>
-      <div className="maindiv">
+      <div className={classes.maindiv}>
         <Title size="main-title" content={`I'm Gabriel Pitrella`} />
       </div>
       <Text type={4}>

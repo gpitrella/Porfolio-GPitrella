@@ -48,14 +48,6 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
         <span onClick={() => scrollIntoView(navRefs.mainRef)}>
           <h1 className={classes.gp}>GP</h1>
         </span>
-          {/* <Icon
-            theme={theme}
-            height={logoHeight}
-            width={logoWidth}
-            onClick={() => {
-              window.location.reload();
-          />
-            }} */}
         </div>
         <motion.div className={classes.content__right}>
           {width > 900 ? (
@@ -99,9 +91,6 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
             >
               <MenuIcon />
             </IconButton>
-              {/* <Button onClick={showSideBarHandler}>
-                <Icons type="menu" width="20px" />
-              </Button> */}
               {ctx.dark ? (
                 <span onClick={themeHandler} className={classes.content__right__iconMobile}><Lotties type="light" width="30px"/></span>
               ) : (
