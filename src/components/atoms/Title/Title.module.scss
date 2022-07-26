@@ -1,0 +1,77 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+1024px - 1366px     iPad Pro
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    // Phone-xs
+    @if $breakpoint == phone-xs {
+      @media (max-width: 20em) {
+        @content;
+      } //0 - 320px
+    }
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //0 - 600px
+    }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+}
+
+.title{
+  display: block;
+  margin: 0;
+}
+.main-title{
+  margin: 15px;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+.title--l{
+  margin: 15px;
+  font-size: 3rem;
+}
+.title--l-alt{
+  margin: 15px;
+  font-size: 3rem;
+  color: var(--text-secondary);
+}
+.title--m{
+  font-size: medium;
+}
+.title--s{
+  font-size: small;
+}
+
+@media (max-width: 900px) {
+  .title--l {
+    font-size: 2rem;
+  }
+  .title--l-alt {
+    font-size: 2rem;
+  }
+}
+
+@include respond(tab-port) {
+  .main-title{
+    font-size: 2.5rem;
+  }
+}
+
+@include respond(phone) {
+  .main-title{
+    font-size: 2rem;
+  }
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import List from "../List/List";
-import classes from "./Skills.module.css";
+import classes from "./Skills.module.scss";
 
 type Props = {
   skillList: string[];

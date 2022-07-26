@@ -1,6 +1,6 @@
 // import Button from "../../atoms/Button/Button";
 // import Link from "../../atoms/Link/Link";
-import "./ReadMore.css";
+import classes from "./ReadMore.module.css";
 import { navRefs } from "../../organisms/NavBar/navbarTypes";
 
 type Props = {
@@ -13,7 +13,8 @@ type Props = {
 const ReadMore = ({ link, children, navRefs, scrollIntoView }: Props) => {
   return (
     <div>
-      <button className="custom-btn btn-12" onClick={() => scrollIntoView(navRefs.aboutRef)}><span>Click!</span><span>Read More</span></button>
+      
+      <button className={`${classes.custombtn} ${classes.btn12}`} onClick={() => scrollIntoView(navRefs.aboutRef)}><span>Click!</span><span>Read More</span></button>
     </div>
   );
 };

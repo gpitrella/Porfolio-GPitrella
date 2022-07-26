@@ -3,7 +3,7 @@ import classes from "./Link.module.css";
 
 type Props = {
   link: string;
-  children: JSX.Element | JSX.Element[] | string;
+  children?: JSX.Element | JSX.Element[] | string;
   isText?: boolean;
 };
 
@@ -13,7 +13,7 @@ const Link = ({ link, children, isText=true }: Props) => {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className={`${classes.link} ${isText ? classes["link--text"] : classes["link--icons"]}`}
+      className={`${classes.link}`}
     >
       {children}
     </a>

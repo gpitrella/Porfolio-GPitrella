@@ -9,7 +9,7 @@ import './Greet.scss'
 const Greet = () => {
   
   const {text} = useTypewriter({
-    words: ['Hi! Welcome', 'Hello! Salutes', 'Bonjour! Accueillir', 'Hola! Saludos'],
+    words: ['Hi! Welcome', 'Hello! Salutes', 'Bonjour! Saluts', 'Hola! Saludos'],
     loop: false, // Infinit
     typeSpeed: 200,
     deleteSpeed: 80,
@@ -26,8 +26,6 @@ const Greet = () => {
       </div>
       <Text type={4}>
           FULL STACK DEVELOPER passionate about improve the world with the new 
-      </Text>
-      <Text type={4}>
           technology and build products that generated a real impact to its users.
       </Text>
     </div>

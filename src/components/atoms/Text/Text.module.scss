@@ -1,0 +1,59 @@
+@mixin respond($breakpoint) {
+  // Phone
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //0 - 600px
+  }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+}
+
+.text {
+  font-size: 20px;
+  margin: 5px 25px;
+  text-align: justify;
+}
+
+.text--alt-2 {
+  font-family: var(--alt-font);
+  font-size: larger;
+  color: var(--primary);
+}
+
+.text--alt-3 {
+  font-family: var(--info-font);
+  font-size: x-small;
+  margin: 15px;
+}
+
+.text--alt-4 {
+  font-size: 25px;
+  margin: 7px 15px;
+  width: 80%;
+  text-align: center;  
+}
+
+@include respond(tab-port) {
+  .text--alt-4 {
+    font-size: 20px;
+    width: 90%;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+
+@include respond(phone) {
+  .text--alt-4 {
+    font-size: 15px;
+    width: 90%;
+  }
+  .text {
+    font-size: 16px;
+  }
+}

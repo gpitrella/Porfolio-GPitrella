@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ListItem.module.css";
+import classes from "./ListItem.module.scss";
 
 type Props = {
   children: string | JSX.Element | JSX.Element[];

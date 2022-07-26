@@ -1,29 +1,4 @@
 .link {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  height: 100%;
   color: var(--text-primary);
-  font-size: x-large;
-  transition: all 0.5s;
-}
-
-.link--text {
-  padding: 0 15px;
-}
-
-.link--icons {
-  width: fit-content;
-}
-
-@media (max-width: 900px) {
-  .link {
-    width: 70%;
-    font-size: small;
-  }
-  .link--icons {
-    width: fit-content;
-  }
 }

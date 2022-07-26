@@ -47,9 +47,6 @@
     // }
   }
 
-
-
-
 .maindiv {
     display: flex;
     flex-direction: row;
@@ -82,16 +79,12 @@
     transform: translateX(-50%);
     color: white;
     background: var(--img-letter);
-    /* background:url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg'); */
     background-size: auto 300%;
     background-clip: text;
-    /* text-fill-color: transparent; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 8s linear infinite;
 }
-
-/* color: var(--text-secondary); */
 
 .colorh1:nth-child(2) {
     top: 50vh;
@@ -103,6 +96,20 @@
   }
   to {
     background-position: center 200%;
+  }
+}
+
+@include respond(tab-port) {
+  .colorh1 {
+    top: 4em;
+    font-size: 3em;
+  }
+}
+
+@include respond(phone) {
+  .colorh1 {
+    top: 7em;
+    font-size: 4vh;
   }
 }
    

@@ -6,6 +6,7 @@ import Skills from "../../molecules/Skills/Skills";
 import classes from "./About.module.css";
 import GoTo from "../../molecules/GoTo/GoTo";
 import Lotties from "../../atoms/Lotties/Lotties";
+import Resume from "../../molecules/Resume/Resume"
 
 type Props = {
   profileImage: string;
@@ -13,7 +14,7 @@ type Props = {
 };
 
 const resumeLink =
-  "https://drive.google.com/file/d/1YTrqBcevYOJmnYcPW4hqsSQVAtBG17e1/view?usp=sharing";
+  "https://res.cloudinary.com/djgghmpgh/image/upload/fl_attachment/v1658830366/Gabriel_Pitrella_-_CV_-_Full_Stack_Developer_gaqbze.pdf";
 
 const About = React.forwardRef<HTMLElement, Props>(
   ({ profileImage, skillList }: Props, ref) => {
@@ -22,7 +23,7 @@ const About = React.forwardRef<HTMLElement, Props>(
         <div className={classes.info}>
           <Info title={AboutMe.title} text={AboutMe.text}/>
           <Skills skillList={skillList}/>
-          <GoTo link={resumeLink}>My Resume</GoTo>
+          <Resume link={resumeLink}/>
         </div>
         <div className={classes.pic}>
           <Lotties type="person" width="350px"/>

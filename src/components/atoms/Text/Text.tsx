@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Text.module.css";
+import classes from "./Text.module.scss";
 
 type Props = {
   children: JSX.Element | JSX.Element[] | string;
