@@ -1,10 +1,8 @@
 import React from "react";
 import { AboutMe } from "../../../assets/Details";
-// import Image from "../../atoms/Image/Image";
 import Info from "../../molecules/Info/Info";
 import Skills from "../../molecules/Skills/Skills";
 import classes from "./About.module.css";
-import GoTo from "../../molecules/GoTo/GoTo";
 import Lotties from "../../atoms/Lotties/Lotties";
 import Resume from "../../molecules/Resume/Resume"
 

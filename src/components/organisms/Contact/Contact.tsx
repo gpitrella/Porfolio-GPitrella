@@ -1,6 +1,5 @@
 import React from "react";
 import { ContactInfo } from "../../../assets/Details";
-import GoTo from "../../molecules/GoTo/GoTo";
 import Info from "../../molecules/Info/Info";
 import classes from "./Contact.module.css";
 import ContactMe from "../../molecules/ContactMe/ContactMe";

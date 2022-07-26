@@ -1,6 +1,5 @@
 import React from "react";
 import Greet from "../../molecules/Greet/Greet";
-import GoTo from "../../molecules/GoTo/GoTo";
 import ReadMore from "../../molecules/ReadMore/ReadMore";
 import { navRefs } from "../../organisms/NavBar/navbarTypes";
 import classes from "./Main.module.css";
