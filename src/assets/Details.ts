@@ -15,33 +15,31 @@ export interface IProjectsList {
 
 export const ProjectsList: IProjectsList[] = [
   {
-    repo: "",
+    repo: "https://laquastore.com.ar",
     live: "https://laquastore.com.ar",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686749/LAQUAStore_o8rpea.jpg",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658838662/laquastore_m7emsg.jpg",
     title: "Beauty E-commerce",
-    description: `In this Web-App, you can store and create your notes, the used
-    technologies are: React.js, Framer Motion which is used for
-    handling the animations, React-Router-Dom to handle page routing,
-    CSS Modules, Lottie for Animated Icons, Firebase Auth for
-    authentication and Firestore as a NoSQL database.`,
+    description: `This is a full Web Page, you can buy any product in the store. The main used
+    technologies are: WordPress, MercadoPago, Google Ads, Google Analytics, Facebook Ads`,
     techs: ["WordPress", "MercadoPago", "Google Ads", "Google Analytics", "Facebook Ads"],
   },
   {
-    repo: "https://github.com/ricardovera76/Hacker-news.git",
-    live: "https://hacker-news-rv.vercel.app",
+    repo: "https://github.com/gpitrella/PF-FrontEnd",
+    live: "https://techmarketfront.vercel.app",
     image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686749/TechMarket_dpnvkm.jpg",
-    title: "Hacker News",
-    description: `In This Web-App you can read, see and save all the news related to
-      the main JS Frameworks / Libraries like Angular, React JS and VUE.`,
-    techs: ["React JS", "React-Router", "React-Lottie"],
+    title: "Tech Market App",
+    description: `In this App you can buy any tech product and use the App like user or admin. The main 
+    used technologies are: React JS, Redux, SendGrid, Sequelize, Express, Postgress.`,
+    techs: ["React JS", "Redux", "SendGrid", "Sequelize", "Express", "Postgress"],
   },
   {
-    repo: "https://github.com/ricardovera76/portfolio.git",
-    live: "https://ricardo-vera-portfolio.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686750/AppVideogames_cft0gu.jpg",
-    title: "Ricardo Vera Portfolio",
-    description: `In This Web-App you can checkout my portfolio, and also other projects I've worked on in the past years`,
-    techs: ["React JS", "TypeScript", "Framer-Motion"],
+    repo: "https://github.com/gpitrella/PI-VideoGames",
+    live: "https://deploy-videogame.vercel.app",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658838851/videogamesApp2_ktu8ff.jpg",
+    title: "VideoGames App",
+    description: `In this App you can see all details of your favorites videogames. The main 
+    used technologies are: React JS, Sequelize, Express, Postgress, API Integration.`,
+    techs: ["React JS", "SendGrid", "Sequelize", "Express", "Postgress"],
   }
 ];
 
@@ -64,7 +62,7 @@ export interface IDetails {
 export const ContactInfo: IDetails = {
   title: "Contact",
   text: [
-    "I'm currently open & looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!",
+    "Do you like my projects? Whether you have a question or just want to say hello, get in touch.",
   ],
 };
 

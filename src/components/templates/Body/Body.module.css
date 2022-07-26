@@ -2,6 +2,7 @@
   width: calc(100% - calc(2 * 150px));
   padding: 0 150px;
   margin: 120px 0;
+  margin-bottom: 70px;
 }
 @media (max-width: 1080px) {
   .section {

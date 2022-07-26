@@ -71,7 +71,7 @@
     margin: 0;
     padding: 0;
     width: 90%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -84,6 +84,7 @@
     padding: 0;
   }
   .work__title {
+    font-size: 12px;
     width: 80%;
   }
   .work__container {

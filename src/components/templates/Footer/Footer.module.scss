@@ -1,0 +1,53 @@
+@mixin respond($breakpoint) {
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //0 - 600px
+    }
+    // Table Landscape
+    @if $breakpoint == tab-land {
+      @media (max-width: 75em) {
+        @content;
+      } //1200px
+    }
+  }
+
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.footer__container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__container__socials {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.footer__container__info {
+  font-size: small;
+  font-family: var(--info-font);
+  text-align: center;
+}
+
+@include respond(tab-land) {
+  .footer__container {
+    width: 60%;
+  }
+}
+
+@include respond(phone) {
+  .footer__container {
+    width: 70%;
+  }
+}
+

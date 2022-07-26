@@ -7,6 +7,7 @@ import { CardActionArea, CardActions } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
+import Link from "../../atoms/Link/Link";
 
 interface Project {
     repo: string;
@@ -33,7 +34,7 @@ export default function CardProyect({ projectDetail, alt = true}: Props) {
           alt={projectDetail.title}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div"> 
+          <Typography gutterBottom variant="h6" component="div"> 
             {projectDetail.title}
           </Typography>
           <Typography variant="body2" color="text.secondary"> 
@@ -43,10 +44,10 @@ export default function CardProyect({ projectDetail, alt = true}: Props) {
       </CardActionArea>
       <CardActions>
         <IconButton aria-label="add to favorites">
-          <GitHubIcon />
+          <Link link={projectDetail.repo}><GitHubIcon sx={{color: "black"}}/></Link>          
         </IconButton>
-        <IconButton aria-label="share">
-          <LiveTvIcon />
+        <IconButton aria-label="share" >
+          <Link link={projectDetail.live}><LiveTvIcon sx={{color: "black"}}/></Link> 
         </IconButton>
       </CardActions>
     </Card>
