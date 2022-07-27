@@ -74,7 +74,7 @@ export interface IAboutMe {
 export const AboutMe: IDetails = {
   title: "About Me",
   text: [
-    `Hello! My name is Gabriel and I am a Full Stack Developer graduated in Industrial Engineering with
+    `Hello! I'm Gabriel Full Stack Developer graduated in Industrial Engineering with
     experience working with JavaScript, NodeJS, React, Sequelize,
     SQL among other technologies in the sector. One of my achived was developed an E-commerce that surpasses
     600 successful sales in the first three months, also I worked in
@@ -86,33 +86,15 @@ export const AboutMe: IDetails = {
 
 export const AllExperience: Experience[] = [
   {
-    company: "Waku",
-    title: "Web Developer",
+    company: "",
+    title: "",
     tasks: [
-      "Test and develop UI components.",
-      "Fixing Bugs in components.",
-      "Assisting the web development team with all aspects of website and application design.",
-      "Assisting with the testing and maintenance of backend and front-end applications.",
-      "Brainstorming new tech applications such as digital storage and mobile technology.",
-      "Collaborating with developers to implement new web features.",
-      "Keeping up-to-date with the latest technology and programming trends.",
-      "Converting video, audio, written, and graphic components into compatible formats for the web.",
-      "Using user feedback to identify and correct problems with a client's website.",
     ],
   },
   {
-    company: "Fiverr",
-    title: "Web Developer",
+    company: "",
+    title: "",
     tasks: [
-      "Test and develop UI components.",
-      "Fixing Bugs in components.",
-      "Write well-designed, testable, efficient code by using web development best practices",
-      "Create basic website layouts and user interfaces with HTML, CSS, JavaScript and JS Frameworks",
-      "Integrate data from various back-end web services and databases",
-      "Work with stakeholders to gather and refine specifications and requirements based on technical needs",
-      "Create and maintain software documentation",
-      "Ensure cross-browser compatibility of new features",
-      "Be responsible for maintaining, expanding, and scaling our site",
     ],
   },
 ];
