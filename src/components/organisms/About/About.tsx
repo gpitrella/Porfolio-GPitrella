@@ -12,7 +12,7 @@ type Props = {
 };
 
 const resumeLink =
-  "https://res.cloudinary.com/djgghmpgh/image/upload/fl_attachment/v1658830366/Gabriel_Pitrella_-_CV_-_Full_Stack_Developer_gaqbze.pdf";
+  "https://res.cloudinary.com/djgghmpgh/image/upload/fl_attachment/v1658949548/Gabriel_Pitrella_-_CV_-_Full_Stack_Developer_-_EN_lirxke.pdf";
 
 const About = React.forwardRef<HTMLElement, Props>(
   ({ profileImage, skillList }: Props, ref) => {
@@ -25,7 +25,6 @@ const About = React.forwardRef<HTMLElement, Props>(
         </div>
         <div className={classes.pic}>
           <Lotties type="person" width="350px"/>
-          {/* <Image image={profileImage} /> */}
         </div>
       </section>
     );

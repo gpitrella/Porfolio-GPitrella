@@ -8,8 +8,6 @@ type Props = {
   children?: JSX.Element | JSX.Element[] | string;
 };
 
-// const Resume = ({ link, children, navRefs, scrollIntoView }: Props) => {
-
 const Resume = ({ link, children }: Props) => {
   return (
     <div className={classes.mainresume}>
