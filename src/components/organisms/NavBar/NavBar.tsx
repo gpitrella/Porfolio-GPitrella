@@ -3,8 +3,6 @@ import { INavRefProps } from "./navbarTypes";
 import { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import classes from "./NavBar.module.scss";
-// import Button from "../../atoms/Button/Button";
-// import Icons from "../../atoms/Icons/Icons";
 import Lotties from "../../atoms/Lotties/Lotties";
 import SideBar from "../../molecules/SideBar/SideBar";
 import IconButton from '@mui/material/IconButton';

@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import { IThemeContext, ThemeProviderProps } from "./Theme";
 
 const defaultThemeState = {
-  dark: true,
+  dark: false,
 };
 
 export const ThemeContext = createContext<IThemeContext>(defaultThemeState);

@@ -8,6 +8,7 @@ import "./Portfolio.css";
 import Body from "./components/templates/Body/Body";
 import Footer from "./components/templates/Footer/Footer";
 import Background from "./components/atoms/Background/Background";
+import Lotties from "./components/atoms/Lotties/Lotties";
 
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState<boolean>();
@@ -75,7 +76,9 @@ const Portfolio = () => {
             animate={{ scale: 1 }}
             exit={{ scale: 0.5 }}
           >
-            <Icon theme={theme} width={logoWidth} height={logoHeight} />
+            <div className="charging_lotties">
+              <Lotties type="charging" width="300px" />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

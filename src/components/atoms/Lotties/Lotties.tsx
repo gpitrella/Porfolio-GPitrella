@@ -2,6 +2,7 @@ import Lottie from 'react-lottie';
 import Light from '../../../assets/light.json';
 import Dark from '../../../assets/dark.json';
 import Person from '../../../assets/person.json';
+import Charging from '../../../assets/charging.json';
 
 
 type Props = {
@@ -19,6 +20,8 @@ const Lotties = ({ width, type }: Props) => {
                           ? Dark
                           : type === 'person'
                           ? Person
+                          : type === 'charging'
+                          ? Charging
                           : '',
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
