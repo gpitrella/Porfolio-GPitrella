@@ -40,8 +40,18 @@ export const ProjectsList: IProjectsList[] = [
     description: `In this App you can see all details of your favorites videogames. The main 
     used technologies are: React JS, Sequelize, Express, Postgress, API Integration.`,
     techs: ["React JS", "SendGrid", "Sequelize", "Express", "Postgress"],
+  },
+  {
+    repo: "https://github.com/gpitrella/Porfolio-GPitrella",
+    live: "https://porfolio-gpitrella.vercel.app",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1659037961/porfolio-gpitrella_ir6xmz.jpg",
+    title: "Porfolio",
+    description: `In this App you can see everything about my studies, professional career, projects and more. The main 
+    used technologies are: React JS, TypeScript, SASS, Lotties Integration.`,
+    techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
   }
 ];
+
 
 export const SkillList: string[] = [
   "Teamwork",

@@ -3,7 +3,8 @@ import classes from "./Work.module.css";
 import Header from "../../atoms/Header/Header";
 import Title from "../../atoms/Title/Title";
 import { ProjectsList } from "../../../assets/Details";
-import CardProyect from "../../organisms/CardProyect/CardProyect"
+import CardProyect from "../../organisms/CardProyect/CardProyect";
+
 
 type Props = {};
 

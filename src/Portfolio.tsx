@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ThemeContext } from "./context/ThemeContext";
 import { useWindowSize } from "./hooks/useWindowSize";
 import NavBar from "./components/organisms/NavBar/NavBar";
-import Icon from "./components/atoms/IconLogo/IconLogo";
 import "./Portfolio.css";
 import Body from "./components/templates/Body/Body";
 import Footer from "./components/templates/Footer/Footer";
@@ -20,8 +19,6 @@ const Portfolio = () => {
   const ctx = useContext(ThemeContext);
   const windowSize = useWindowSize();
   const widthCondition = windowSize?.width === undefined ? 0 : windowSize.width;
-  const logoHeight = 55;
-  const logoWidth = 50;
 
   const navRefs = { aboutRef, workRef, experienceRef, contactRef, mainRef };
 
