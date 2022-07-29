@@ -49,8 +49,19 @@ export const ProjectsList: IProjectsList[] = [
     description: `In this App you can see everything about my studies, professional career, projects and more. The main 
     used technologies are: React JS, TypeScript, SASS, Lotties Integration.`,
     techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
-  }
+  },
+  {
+    repo: "",
+    live: "",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1659125473/eco-car-wash_eatnjz.png",
+    title: "Eco Car Wash [In Progress ...]",
+    description: `In this App both users and washer can meet and carry out an ecological wash. The main 
+    use technologies will be: React JS Native, TypeScript, Geolocation.`,
+    techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
+  } 
 ];
+
+
 
 
 export const SkillList: string[] = [

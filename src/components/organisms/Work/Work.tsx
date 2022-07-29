@@ -6,6 +6,7 @@ import { ProjectsList } from "../../../assets/Details";
 import CardProyect from "../../organisms/CardProyect/CardProyect";
 
 
+
 type Props = {};
 
 const Work = React.forwardRef<HTMLElement>((props: Props, ref) => {
