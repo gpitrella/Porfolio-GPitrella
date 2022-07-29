@@ -11,7 +11,7 @@ const Greet = () => {
   const {text} = useTypewriter({
     words: ['Hi! Welcome', 'Hello! Salutes', 'Bonjour! Saluts', 'Hola! Saludos'],
     loop: false, // Infinit
-    typeSpeed: 200,
+    typeSpeed: 160,
     deleteSpeed: 80,
     delaySpeed: 1100,
   })
