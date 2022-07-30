@@ -25,7 +25,7 @@ type Props = {
 
 export default function CardProyect({ projectDetail, alt = true}: Props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: "350px", height: "350px" }}>
       <CardActionArea>
         <CardMedia
           component="img"
