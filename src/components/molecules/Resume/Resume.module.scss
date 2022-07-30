@@ -37,6 +37,7 @@ button {
     border: none;
 }
 .btn7 span {
+    color: white;
     position: relative;
     display: block;
     width: 100%;
@@ -95,6 +96,9 @@ button {
 .btn7 span:after {
     height: 2px;
     width: 0%;
+}
+.btn7 span:hover {
+    color: var(--primary);
 }
 .btn7 span:hover:before {
     height: 100%;

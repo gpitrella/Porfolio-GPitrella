@@ -13,7 +13,6 @@ type Props = {
 const ReadMore = ({ link, children, navRefs, scrollIntoView }: Props) => {
   return (
     <div>
-      
       <button className={`${classes.custombtn} ${classes.btn12}`} onClick={() => scrollIntoView(navRefs.aboutRef)}><span>Click!</span><span>Read More</span></button>
     </div>
   );

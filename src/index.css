@@ -32,7 +32,7 @@ body {
   --disabled-text-dark: #8b8b8b;
   --disabled-text-light: #8a8a8a;
 
-  --primary: #108cff;
+  --primary: rgba(2, 114, 251, 0.894);
   --primary-hover: #61bdff;
 
   --main-font: 'Exo 2', sans-serif;

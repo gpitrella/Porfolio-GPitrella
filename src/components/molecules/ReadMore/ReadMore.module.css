@@ -36,6 +36,7 @@ button {
   perspective: 230px;
 }
 .btn12 span {
+  color: white;
   background: rgb(10, 103, 233);
   background: linear-gradient(0deg, rgb(7, 105, 233) 0%, rgba(2, 114, 251, 0.894) 100%);
   display: block;
