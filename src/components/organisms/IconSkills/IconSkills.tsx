@@ -50,6 +50,13 @@ const IconSkills = () => {
 
               <div className="skills-wrapper__item">
                 <div className="skills-wrapper__icon">
+                  <Icon icon={typescriptIcon} className="skills-wrapper__size-icon" />
+                </div>
+                <p>TypeScript</p>
+              </div>
+
+              <div className="skills-wrapper__item">
+                <div className="skills-wrapper__icon">
                   <Icon icon={html5} className="skills-wrapper__size-icon" />
                 </div>
                 <p>HTML</p>
@@ -116,13 +123,6 @@ const IconSkills = () => {
                   <Icon icon={sequelizeIcon} className="skills-wrapper__size-icon" />
                 </div>
                 <p>Sequelize</p>
-              </div>
-
-              <div className="skills-wrapper__item">
-                <div className="skills-wrapper__icon">
-                  <Icon icon={typescriptIcon} className="skills-wrapper__size-icon" />
-                </div>
-                <p>Bootstrap</p>
               </div>
 
               <div className="skills-wrapper__item">
