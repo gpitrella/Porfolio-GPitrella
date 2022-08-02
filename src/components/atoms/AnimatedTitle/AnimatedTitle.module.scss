@@ -111,14 +111,14 @@ a:hover,a:active{
 		transform:rotateX(180deg)  translateZ(40px);
 		-webkit-backface-visibility: hidden;
 		}
-	// .cubespinner .face4{
-	// 	color:#fff;
-	// 	-webkit-transform:rotateX(270deg) translateZ(40px);
-	// 	-moz-transform:rotateX(270deg) translateZ(40px);
-	// 	-ms-transform:rotateX(270deg) translateZ(40px);
-	// 	transform:rotateX(270deg) translateZ(40px);
-	// 	-webkit-backface-visibility: hidden;
-	// }
+	.cubespinner .face4{
+		color:var(--text-primary);
+		-webkit-transform:rotateX(270deg) translateZ(40px);
+		-moz-transform:rotateX(270deg) translateZ(40px);
+		-ms-transform:rotateX(270deg) translateZ(40px);
+		transform:rotateX(270deg) translateZ(40px);
+		-webkit-backface-visibility: hidden;
+	}
 
 
 /*Cubical Flipping or rotation*/
