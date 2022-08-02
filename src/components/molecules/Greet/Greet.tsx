@@ -2,9 +2,10 @@
 import Text from "../../atoms/Text/Text";
 import Title from "../../atoms/Title/Title";
 // import TypewriterElement from "../../atoms/Typewriter/Typewriter";
-import { useTypewriter } from 'react-simple-typewriter'
+import { useTypewriter } from 'react-simple-typewriter';
 // import { Cursor } from "../../atoms/Cursor/Cursor";
-import classes from'./Greet.module.scss'
+import classes from'./Greet.module.scss';
+import AnimatedTitle from '../../atoms/AnimatedTitle/AnimatedTitle';
 
 const Greet = () => {
   
@@ -18,11 +19,12 @@ const Greet = () => {
 
   return (
     <div className={classes.containerGreet}>
+      
       <div className={classes.color}>
         <h1 className={classes.colorh1}>{`${text}`}</h1>
       </div>
       <div className={classes.maindiv}>
-        <Title size="main-title" content={`I'm Gabriel Pitrella`} />
+        <Title size="main-title" content={`I'm`} /><AnimatedTitle />
       </div>
       <Text type={4}>
           FULL STACK DEVELOPER passionate about improve the world with the new 
