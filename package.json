@@ -18,6 +18,7 @@
     "@types/reveal": "^4.2.0",
     "framer-motion": "^6.3.3",
     "gsap": "^3.10.4",
+    "jquery": "^3.6.0",
     "lottie-web": "^5.9.4",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.8.1",
