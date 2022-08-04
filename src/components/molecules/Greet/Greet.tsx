@@ -24,7 +24,6 @@ const Greet = () => {
         <h1 className={classes.colorh1}>HI! Welcome</h1>
       </div>
       <div className={classes.maindiv}>
-        <Title size="main-title" content={`I'm Gabriel Pitrella`} />
         <AnimatedTitle />
       </div>
       <Text type={4}>

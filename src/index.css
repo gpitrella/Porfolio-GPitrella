@@ -18,12 +18,14 @@ body {
   --text-secondary-dark: #9d9d9d;
   --text-tertiary-dark: #5c5c5c;
   --background-animated-dark: #5c5c5c62;
+  --background-animated-text-dark: rgb(51, 183, 176);
   --img-letter-dark:url("https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg");
   
   --text-primary-light: #181818;
   --text-secondary-light: #5c5c5c;
   --text-tertiary-light: #747474;
   --background-animated-light: #7474746f;
+  --background-animated-text-light: rgb(51, 159, 221);
   --img-letter-light:url("https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
 
   --divider-dark: #323232;
@@ -55,6 +57,7 @@ body {
   --divider: var(--divider-dark);
   --disabled-text: var(--disabled-text-dark);
   --img-letter: var(--img-letter-dark);
+  --animated-bg-name: var(--background-animated-text-dark)
 }
 
 [data-theme="light"] {
@@ -67,4 +70,5 @@ body {
   --divider: var(--divider-light);
   --disabled-text: var(--disabled-text-light);
   --img-letter: var(--img-letter-light);
+  --animated-bg-name: var(--background-animated-text-light)
 }

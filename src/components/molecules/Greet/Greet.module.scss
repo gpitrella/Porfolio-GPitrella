@@ -50,6 +50,7 @@
 .maindiv {
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 .containerGreet {
@@ -84,6 +85,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 18s linear infinite;
+    filter: drop-shadow(1px 1px 1px var(--text-primary, 0.6));
 }
 
 .colorh1:nth-child(2) {
