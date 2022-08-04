@@ -40,6 +40,19 @@
     bottom: -150px;
 }
 
+.circles span {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    background: var(--bg-animated);
+    left: 45%;
+    animation: animatebubles 25s linear infinite;
+    animation-delay: 0s;
+    bottom: -150px;
+}
+
 .circles li:nth-child(1){
     left: 25%;
     width: 80px;
@@ -117,16 +130,25 @@
 }
 
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
+    }
+}
+
+@keyframes animatebubles {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1000px);
+        opacity: 0;
     }
 }

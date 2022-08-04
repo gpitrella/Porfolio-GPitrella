@@ -5,7 +5,7 @@ import Title from "../../atoms/Title/Title";
 import { useTypewriter } from 'react-simple-typewriter';
 // import { Cursor } from "../../atoms/Cursor/Cursor";
 import classes from'./Greet.module.scss';
-// import AnimatedTitle from '../../atoms/AnimatedTitle/AnimatedTitle';
+import AnimatedTitle from '../../atoms/AnimatedTitle/AnimatedTitle';
 
 const Greet = () => {
   
@@ -25,6 +25,7 @@ const Greet = () => {
       </div>
       <div className={classes.maindiv}>
         <Title size="main-title" content={`I'm Gabriel Pitrella`} />
+        <AnimatedTitle />
       </div>
       <Text type={4}>
           FULL STACK DEVELOPER passionate about improve the world with the new 

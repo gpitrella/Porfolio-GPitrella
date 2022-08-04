@@ -8,26 +8,26 @@
 1800px +            Big Desktop
 1em = 16px
 */
-@mixin respond($breakpoint) {
-    // Phone-xs
-    @if $breakpoint == phone-xs {
-      @media (max-width: 20em) {
-        @content;
-      } //0 - 320px
-    }
-    // Phone
-    @if $breakpoint == phone {
-      @media (max-width: 37.5em) {
-        @content;
-      } //0 - 600px
-    }
-  // Table Portrait
-  @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
-      @content;
-    } //900px
-  }
-}
+// @mixin respond($breakpoint) {
+//     // Phone-xs
+//     @if $breakpoint == phone-xs {
+//       @media (max-width: 20em) {
+//         @content;
+//       } //0 - 320px
+//     }
+//     // Phone
+//     @if $breakpoint == phone {
+//       @media (max-width: 37.5em) {
+//         @content;
+//       } //0 - 600px
+//     }
+//   // Table Portrait
+//   @if $breakpoint == tab-port {
+//     @media (max-width: 56.25em) {
+//       @content;
+//     } //900px
+//   }
+// }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 $delay: 0.015s;
@@ -49,7 +49,7 @@ $easing: cubic-bezier(0.76, 0, 0.24, 1);
 //   margin: 0;
 // }
 
-.rollingtext{
+.rolling-text{
   display: inline-block;
   font-family: 'Playfair Display', serif;
   $font-size: 48px;

@@ -3,6 +3,8 @@ import Light from '../../../assets/light.json';
 import Dark from '../../../assets/dark.json';
 import Person from '../../../assets/person.json';
 import Charging from '../../../assets/charging.json';
+import Bubbles from '../../../assets/bubbles.json';
+import Bubbles2 from '../../../assets/bubble2.json';
 
 
 type Props = {
@@ -22,6 +24,10 @@ const Lotties = ({ width, type }: Props) => {
                           ? Person
                           : type === 'charging'
                           ? Charging
+                          : type === 'bubbles'
+                          ? Bubbles
+                          : type === 'bubbles2'
+                          ? Bubbles2
                           : '',
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"

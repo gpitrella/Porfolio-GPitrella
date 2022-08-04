@@ -4,7 +4,7 @@ import Info from "../../molecules/Info/Info";
 import Skills from "../../molecules/Skills/Skills";
 import classes from "./About.module.css";
 import Lotties from "../../atoms/Lotties/Lotties";
-import Resume from "../../molecules/Resume/Resume"
+import Resume from "../../molecules/Resume/Resume";
 
 type Props = {
   profileImage: string;
