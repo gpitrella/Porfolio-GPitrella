@@ -75,7 +75,7 @@
     width: 20px;
     height: 20px;
     background: var(--primary-hover, 0.2);
-    animation: animate 25s linear infinite;
+    animation: animate 25s cubic-bezier(.4,.63,.87,.63) infinite;
     bottom: -150px;
 }
 
@@ -108,8 +108,8 @@
 
 .circles li:nth-child(4){
     left: 40%;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     background: var(--primary-hover, 0.4);
     animation-delay: 0s;
     animation-duration: 18s;
@@ -151,12 +151,21 @@
 
 @keyframes animate {
     0%{
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(0) translateX(50px) rotate(0deg);
         opacity: 1;
         border-radius: 40%;
     }
+    25%{
+        transform: translateY(-250) translateX(50px);
+    }
+    50%{
+        transform: translateY(-500) translateX(-150px);
+    }
+    75%{
+        transform: translateY(-750) translateX(10px);
+    }
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1000px) translateX(100px) rotate(720deg);
         opacity: 0;
         border-radius: 60%;
     }
