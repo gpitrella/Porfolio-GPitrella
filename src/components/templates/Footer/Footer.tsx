@@ -1,5 +1,6 @@
 import Icons from "../../atoms/Icons/Icons";
 import classes from "./Footer.module.scss";
+import Lotties from "../../atoms/Lotties/Lotties";
 
 const Footer = () => {
   return (

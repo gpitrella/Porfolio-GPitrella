@@ -5,6 +5,10 @@ import Person from '../../../assets/person.json';
 import Charging from '../../../assets/charging.json';
 import Bubbles from '../../../assets/bubbles.json';
 import Bubbles2 from '../../../assets/bubble2.json';
+import LionFish from '../../../assets/lionfish.json';
+import Medusa from '../../../assets/medusa.json';
+import Turtle from '../../../assets/turtle.json';
+import Seaweed from '../../../assets/seaweed.json';
 
 
 type Props = {
@@ -17,18 +21,26 @@ const Lotties = ({ width, type }: Props) => {
     loop: true,
     autoplay: true,
     animationData: type === 'light' 
-                          ? Light 
-                          : type === 'dark'
-                          ? Dark
-                          : type === 'person'
-                          ? Person
-                          : type === 'charging'
-                          ? Charging
-                          : type === 'bubbles'
-                          ? Bubbles
-                          : type === 'bubbles2'
-                          ? Bubbles2
-                          : '',
+                      ? Light 
+                      : type === 'dark'
+                      ? Dark
+                      : type === 'person'
+                      ? Person
+                      : type === 'charging'
+                      ? Charging
+                      : type === 'bubbles'
+                      ? Bubbles
+                      : type === 'bubbles2'
+                      ? Bubbles2
+                      : type === 'lionfish'
+                      ? LionFish
+                      : type === 'medusa'
+                      ? Medusa
+                      : type === 'turtle'
+                      ? Turtle
+                      : type === 'seaweed'
+                      ? Seaweed
+                      : '',
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }

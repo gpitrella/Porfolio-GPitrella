@@ -27,8 +27,8 @@ const Greet = () => {
         <AnimatedTitle />
       </div>
       <Text type={4}>
-          FULL STACK DEVELOPER passionate about improve the world with the new 
-          technology and build products that generated a real impact to its users.
+          <p><strong>FULL STACK DEVELOPER</strong> passionate about improve the world with the new 
+          technology and build products that generated a real impact to its users. </p>
       </Text>
     </div>
   );

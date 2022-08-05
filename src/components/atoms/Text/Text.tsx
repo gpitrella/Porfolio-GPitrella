@@ -1,4 +1,4 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import classes from "./Text.module.scss";
 
 type Props = {

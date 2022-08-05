@@ -20,6 +20,21 @@
     
 }
 
+#lionfish {
+    position: absolute;
+    display: block;
+    animation-delay: 0s;
+    animation: animateLionFish 50s linear infinite;
+}
+
+#turtlemove {
+    position: absolute;
+    display: block;
+    animation-delay: 5s;
+    animation-duration: 60s;
+    animation: turtle 60s linear infinite;
+}
+
 .circles{
     position: absolute;
     top: 0;
@@ -27,6 +42,16 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+.circles span {
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 45%;
+    animation: animatebubles 25s linear infinite;
+    animation-delay: 0s;
+    bottom: -150px;
 }
 
 .circles li{
@@ -40,18 +65,6 @@
     bottom: -150px;
 }
 
-.circles span {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 100px;
-    height: 100px;
-    background: var(--bg-animated);
-    left: 45%;
-    animation: animatebubles 25s linear infinite;
-    animation-delay: 0s;
-    bottom: -150px;
-}
 
 .circles li:nth-child(1){
     left: 25%;
@@ -80,6 +93,7 @@
     left: 40%;
     width: 60px;
     height: 60px;
+    background: var(--primary-hover, 0.4);
     animation-delay: 0s;
     animation-duration: 18s;
 }
@@ -93,20 +107,22 @@
 
 .circles li:nth-child(6){
     left: 75%;
-    width: 110px;
-    height: 110px;
+    width: 50px;
+    height: 50px;
     animation-delay: 3s;
 }
 
 .circles li:nth-child(7){
     left: 35%;
-    width: 150px;
-    height: 150px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
     animation-delay: 7s;
 }
 
 .circles li:nth-child(8){
     left: 50%;
+    background: var(--primary-hover, 0.2);
     width: 25px;
     height: 25px;
     animation-delay: 15s;
@@ -115,6 +131,7 @@
 
 .circles li:nth-child(9){
     left: 20%;
+    background: var(--primary-hover, 0.6);
     width: 15px;
     height: 15px;
     animation-delay: 2s;
@@ -123,10 +140,29 @@
 
 .circles li:nth-child(10){
     left: 85%;
-    width: 150px;
-    height: 150px;
+    background: var(--primary-hover, 0.1);
+    width: 10px;
+    height: 10px;
     animation-delay: 0s;
     animation-duration: 11s;
+}
+
+#medusa1 {
+    left: 45%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    animation: medusa 40s linear infinite;
+}
+
+#medusa2 {
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    animation: medusa 40s linear infinite;
 }
 
 @keyframes animate {
@@ -150,5 +186,38 @@
     100%{
         transform: translateY(-1000px);
         opacity: 0;
+    }
+}
+
+@keyframes animateLionFish {
+    0%{
+        transform: translateY(500px) translateX(100vw);
+        opacity: 1;
+   }
+    100%{
+        transform: translateY(-100px) translateX(-100px);
+        opacity: 0.7;
+    }
+}
+
+@keyframes medusa {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1100px) translateX(300px);
+        opacity: 0.7;
+    }
+}
+
+@keyframes turtle {
+    0%{
+        transform: translateY(600px) translateX(140vw);
+        opacity: 1;
+   }
+    100%{
+        transform: translateY(650px) translateX(-100px);
+        opacity: 0.8;
     }
 }
