@@ -39,7 +39,7 @@ const IconSkills = () => {
     <section id="skills">
       <Container>
         <div className="skills-wrapper">
-          <Fade clear={isMobile} bottom={isDesktop} duration={1500} delay={500} distance="150px">
+          <Fade clear={isMobile} left={isDesktop} duration={1500} delay={500} distance="150px">
             <div className="skills-wrapper__container">
               <div className="skills-wrapper__item">
                 <div className="skills-wrapper__icon">

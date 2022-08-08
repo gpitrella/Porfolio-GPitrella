@@ -8,26 +8,26 @@
 1800px +            Big Desktop
 1em = 16px
 */
-// @mixin respond($breakpoint) {
-//     // Phone-xs
-//     @if $breakpoint == phone-xs {
-//       @media (max-width: 20em) {
-//         @content;
-//       } //0 - 320px
-//     }
-//     // Phone
-//     @if $breakpoint == phone {
-//       @media (max-width: 37.5em) {
-//         @content;
-//       } //0 - 600px
-//     }
-//   // Table Portrait
-//   @if $breakpoint == tab-port {
-//     @media (max-width: 56.25em) {
-//       @content;
-//     } //900px
-//   }
-// }
+@mixin respond($breakpoint) {
+    // Phone-xs
+    @if $breakpoint == phone-xs {
+      @media (max-width: 31em) {
+        @content;
+      } //0 - 500px
+    }
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //0 - 600px
+    }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+}
 // @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 $delay: 0.015s;
@@ -76,5 +76,24 @@ $easing: cubic-bezier(0.76, 0, 0.24, 1);
 @for $i from 0 through 20 {
   .letter:nth-child(#{$i + 1}) {
     transition-delay: $delay * $i;
+  }
+}
+
+@include respond(tab-port) {
+  .rolling-text{
+    font-size: 3rem;
+  }
+}
+
+@include respond(phone) {
+  .rolling-text{
+    font-size: 2rem;
+  }
+}
+
+@include respond(phone-xs) {
+  .rolling-text{
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
 }

@@ -10,14 +10,14 @@
 */
 @mixin respond($breakpoint) {
     // Phone-xs
-    // @if $breakpoint == phone-xs {
-    //   @media (max-width: 20em) {
-    //     @content;
-    //   } //0 - 320px
-    // }
+    @if $breakpoint == phone-xs {
+      @media (max-width: 31em) {
+        @content;
+      } //0 - 500px
+    }
     // Phone
     @if $breakpoint == phone {
-      @media (max-width: 37.5em) {
+      @media (max-width: 39em) {
         @content;
       } //0 - 600px
     }
@@ -69,13 +69,13 @@
 .colorh1 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 9vh;
+    font-size: 70px;
     letter-spacing: 1vw;
     display: flex;
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 12rem;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -103,15 +103,19 @@
 
 @include respond(tab-port) {
   .colorh1 {
-    top: 4em;
-    font-size: 3em;
+    font-size: 60px;
   }
 }
 
 @include respond(phone) {
   .colorh1 {
-    top: 7em;
-    font-size: 4vh;
+    font-size: 55px;
+  }
+}
+
+@include respond(phone-xs) {
+  .colorh1 {
+    font-size: 40px;
   }
 }
    

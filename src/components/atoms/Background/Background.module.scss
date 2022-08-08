@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+@mixin respond($breakpoint) {
+    // Phone-xs
+    @if $breakpoint == phone-xs {
+      @media (max-width: 31em) {
+        @content;
+      } //0 - 500px
+    }
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //0 - 600px
+    }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+}
+
 .area{
     position: absolute;
     background: var(--bg);  
@@ -33,6 +54,36 @@
     animation-delay: 5s;
     animation-duration: 60s;
     animation: turtle 60s linear infinite;
+}
+
+.image1 {
+    position: absolute;
+    display: block;
+    animation: animate 25s cubic-bezier(.4,.63,.87,.63) infinite;
+    animation-delay: 3s; 
+    bottom: -150px;
+    left: 85%;
+    animation-delay: 2.5s;   
+}
+
+.image2 {
+    position: absolute;
+    display: block;
+    animation: animate 25s cubic-bezier(.4,.63,.87,.63) infinite;
+    animation-delay: 3s; 
+    bottom: -150px;
+    left: 43%;
+    animation-delay: 0s;   
+}
+
+.image3 {
+    position: absolute;
+    display: block;
+    animation: animate 25s cubic-bezier(.4,.63,.87,.63) infinite;
+    animation-delay: 3s; 
+    bottom: -150px;
+    left: 10%;
+    animation-delay: 4s;   
 }
 
 .circles{
@@ -72,8 +123,8 @@
     position: absolute;
     display: block;
     list-style: none;
-    width: 20px;
-    height: 20px;
+    // width: 20px;
+    // height: 20px;
     background: var(--primary-hover, 0.2);
     animation: animate 25s cubic-bezier(.4,.63,.87,.63) infinite;
     bottom: -150px;
@@ -121,14 +172,6 @@
     height: 20px;
     background: var(--primary-hover, 0.6);
     animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 40px;
-    height: 40px;
-    background: rgba(39, 169, 208, 0.3);
-    animation-delay: 3s;
 }
 
 #medusa1 {
@@ -213,4 +256,27 @@
         transform: translateY(650px) translateX(-100px);
         opacity: 0.8;
     }
+}
+
+
+@include respond(tab-port) {
+
+}
+
+@include respond(phone) {
+  .image1{
+        left: 5%;
+  }
+  .image2{
+    left: 15%;
+  }
+  #medusa1 {
+    left: 5%;
+  }
+  .circles span:nth-child(1){
+    left: 4%;
+  }
+  #medusa2 {
+    left: 7%;
+  }
 }
