@@ -51,13 +51,13 @@ export const ProjectsList: IProjectsList[] = [
     techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
   },
   {
-    repo: "",
-    live: "",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1659125473/eco-car-wash_eatnjz.png",
-    title: "Eco Car Wash [In Progress ...]",
-    description: `In this App both users and washer can meet and carry out an ecological wash. The main 
-    use technologies will be: React JS Native, TypeScript, Geolocation.`,
-    techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
+    repo: "https://github.com/gpitrella/JUNIOR",
+    live: "https://appjunior.vercel.app/",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1661260107/Junior_mx4ld5.jpg",
+    title: "App Junior [In Progress ...]",
+    description: `App development to help junior programmers gain experience. The main 
+    use technologies will be: React JS, JavaScript, MongoDB.`,
+    techs: ["React JS", "JavaScript", "Mongoose", "Express", "MongoDB"],
   } 
 ];
 
