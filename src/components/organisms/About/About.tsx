@@ -12,7 +12,7 @@ type Props = {
 };
 
 const resumeLink =
-  "https://res.cloudinary.com/djgghmpgh/image/upload/fl_attachment/v1661260118/Gabriel_Pitrella_-_CV_-_Full_Stack_Developer_-_EN_uarryi.pdf";
+  "https://res.cloudinary.com/djgghmpgh/image/upload/fl_attachment/v1664193948/Gabriel_Pitrella_-_CV_-_Full_Stack_Developer_-_EN_cclwzj.pdf";
   
 
 const About = React.forwardRef<HTMLElement, Props>(

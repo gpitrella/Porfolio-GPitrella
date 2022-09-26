@@ -51,6 +51,15 @@ export const ProjectsList: IProjectsList[] = [
     techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
   },
   {
+    repo: "https://dropshipapps.club/",
+    live: "https://dropshipapps.club/",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1664194866/Dropship_g7ypnl.jpg",
+    title: "Landing Page DropShip App",
+    description: `Development of Landing Page to dropshipping automation tool for Shopify. The main stacks 
+    used were WordPress, Elementor, Vultr, Runcloud, Cloudflare.`,
+    techs: ["WordPress", "Elementor", "Vultr", "Runcloud", "Cloudflare"],
+  },
+  {
     repo: "https://github.com/gpitrella/JUNIOR",
     live: "https://appjunior.vercel.app/",
     image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1661260107/Junior_mx4ld5.jpg",
