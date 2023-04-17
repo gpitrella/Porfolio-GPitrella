@@ -14,9 +14,7 @@ const Background = () => {
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
             <img src="https://i.ibb.co/18DyYXJ/bubble.png" className={classes.image1} width="30px"/>
-            <img src="https://i.ibb.co/18DyYXJ/bubble.png" className={classes.image2} width="15px"/>
             <img src="https://i.ibb.co/18DyYXJ/bubble.png" className={classes.image3} width="20px"/>
             <li id={classes.medusa2}><Lotties type="medusa" width="270px"/></li>
             <li id={classes.medusa1}><Lotties type="medusa" width="250px"/></li>
