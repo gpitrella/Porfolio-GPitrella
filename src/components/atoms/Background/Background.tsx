@@ -9,7 +9,6 @@ const Background = () => {
             <span id={classes.lionfish}><Lotties type="lionfish" width="180px"/></span>
         <ul className={classes.circles}>
             <span><Lotties type="bubbles2" width="500px"/></span>
-            <span><Lotties type="bubbles" width="300px"/></span>
             <span><Lotties type="bubbles" width="150px"/></span>
             <li></li>
             <li></li>

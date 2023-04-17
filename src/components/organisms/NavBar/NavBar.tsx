@@ -3,7 +3,8 @@ import { INavRefProps } from "./navbarTypes";
 import { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import classes from "./NavBar.module.scss";
-import Lotties from "../../atoms/Lotties/Lotties";
+import sunrise from "../../../assets/sunrise.png";
+import moon from "../../../assets/moon.png";
 import SideBar from "../../molecules/SideBar/SideBar";
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -68,9 +69,9 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
                 Contact
               </span>
               {ctx.dark ? (
-                <span onClick={themeHandler}><Lotties type="light" width="30px"/></span>
+                <span onClick={themeHandler}><img src={sunrise} className={classes.button_theme} width="25px" height="auto" alt="sun button"/></span>
               ) : (
-                <span onClick={themeHandler}><Lotties type="dark" width="35px"/></span>
+                <span onClick={themeHandler}><img src={moon} className={classes.button_theme} width="25px" height="auto" alt="sun button"/></span>
               )}
             </motion.div>
           ) : (
@@ -90,9 +91,9 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
               <MenuIcon />
             </IconButton>
               {ctx.dark ? (
-                <span onClick={themeHandler} className={classes.content__right__iconMobile}><Lotties type="light" width="30px"/></span>
+                <span onClick={themeHandler} className={classes.content__right__iconMobile}><img src={sunrise} className="button_theme" width="25px" height="auto" alt="sun button"/></span>
               ) : (
-                <span onClick={themeHandler} className={classes.content__right__iconMobile}><Lotties type="dark" width="30px"/></span>
+                <span onClick={themeHandler} className={classes.content__right__iconMobile}><img src={moon} className="button_theme" width="25px" height="auto" alt="sun button"/></span>
               )}
             </motion.div>
           )}

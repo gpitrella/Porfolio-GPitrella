@@ -69,9 +69,9 @@ const Portfolio = () => {
         {isLoading && (
           <motion.div
             className="loader"
-            initial={{ scale: 0 }}
+            initial={{ scale: 1 }}
             animate={{ scale: 1 }}
-            exit={{ scale: 0.5 }}
+            exit={{ scale: 1 }}
           >
             <div className="charging_lotties">
               <Lotties type="charging" width="300px" />
