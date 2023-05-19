@@ -12,7 +12,7 @@ const Resume = ({ link, children }: Props) => {
   return (
     <div className={classes.mainresume}>
       <button className={`${classes.custombtn} ${classes.btn7}`}>
-        <Link link={link}><span>Resume</span></Link>
+        <Link link={link}><span>{ children }</span></Link>
       </button>
     </div>
   );

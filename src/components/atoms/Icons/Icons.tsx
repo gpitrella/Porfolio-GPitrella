@@ -7,6 +7,8 @@ import GitHub from "../../../assets/github.svg";
 import Menu from "../../../assets/menu.svg";
 import classes from "./Icons.module.css";
 import Mail from "../../../assets/mail.svg";
+import Live from "../../../assets/live-white.svg";
+import GitHubWhite from "../../../assets/github-white.svg";
 
 type Props = {
   width: string;
@@ -34,7 +36,11 @@ const Icons = ({ width, type }: Props) => {
             ? Menu
             : type === "mail"
             ? Mail
-            : ""
+            : type === "githubwhite"
+            ? GitHubWhite
+            : type === "live"
+            ? Live
+            : ''
         }
         style={{
           width: `${parseInt(width)}px`

@@ -8,6 +8,7 @@ import moon from "../../../assets/moon.png";
 import SideBar from "../../molecules/SideBar/SideBar";
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
   const ctx = useContext(ThemeContext);
@@ -44,9 +45,9 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
     >
       <section className={classes.navbar__content}>
         <div className={classes.content__left}>
-        <span onClick={() => scrollIntoView(navRefs.mainRef)}>
-          <h1 className={classes.gp}>GP</h1>
-        </span>
+          <span onClick={() => scrollIntoView(navRefs.mainRef)}>
+            <Link to='/'><h1 className={classes.gp}>GP</h1></Link>
+          </span>
         </div>
         <motion.div className={classes.content__right}>
           {width > 900 ? (
@@ -56,18 +57,16 @@ const NavBar = ({ width, theme, navRefs, scrollIntoView }: INavRefProps) => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <span onClick={() => scrollIntoView(navRefs.aboutRef)}>
+              <Link to='/'><span onClick={() => scrollIntoView(navRefs.aboutRef)}>
                 About Me
-              </span>
-              <span onClick={() => scrollIntoView(navRefs.experienceRef)}>
+              </span></Link>
+              <Link to='/'><span onClick={() => scrollIntoView(navRefs.experienceRef)}>
                 Tech Skills
-              </span>
-              <span onClick={() => scrollIntoView(navRefs.workRef)}>
-                Projects
-              </span>
-              <span onClick={() => scrollIntoView(navRefs.contactRef)}>
+              </span></Link>
+              <Link to='/projects'><span>Projects</span></Link>
+              <Link to='/'><span onClick={() => scrollIntoView(navRefs.contactRef)}>
                 Contact
-              </span>
+              </span></Link>
               {ctx.dark ? (
                 <span onClick={themeHandler}><img src={sunrise} className={classes.button_theme} width="25px" height="auto" alt="sun button"/></span>
               ) : (

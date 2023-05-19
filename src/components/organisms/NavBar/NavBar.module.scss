@@ -90,8 +90,14 @@
   justify-content: space-evenly;
 }
 
-.content__right__content span {
+.content__right__content span,
+.content__right__content a span {
   cursor: pointer;
+}
+.content__right__content a,
+.content__left a {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 .gp {

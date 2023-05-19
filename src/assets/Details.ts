@@ -15,9 +15,9 @@ export interface IProjectsList {
 
 export const ProjectsList: IProjectsList[] = [
   {
-    repo: "https://laquastore.com.ar",
+    repo: "",
     live: "https://laquastore.com.ar",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658838662/laquastore_m7emsg.jpg",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684188161/LAqua6x6_uoqqxi.webp",
     title: "Beauty E-commerce",
     description: `This is a full Web Page, you can buy any product in the store. The main used
     technologies are: WordPress, MercadoPago, Google Ads, Google Analytics, Facebook Ads`,
@@ -26,7 +26,7 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/PF-FrontEnd",
     live: "https://techmarketfront.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658686749/TechMarket_dpnvkm.jpg",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684188559/TechMarket_1_hhllap.webp",
     title: "Tech Market App",
     description: `In this App you can buy any tech product and use the App like user or admin. The main 
     used technologies are: React JS, Redux, SendGrid, Sequelize, Express, Postgress.`,
@@ -35,7 +35,7 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/PI-VideoGames",
     live: "https://deploy-videogame.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1658838851/videogamesApp2_ktu8ff.jpg",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684188784/videogamesApp2_u1wdzm.webp",
     title: "VideoGames App",
     description: `In this App you can see all details of your favorites videogames. The main 
     used technologies are: React JS, Sequelize, Express, Postgress, API Integration.`,
@@ -44,17 +44,17 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/Porfolio-GPitrella",
     live: "https://porfolio-gpitrella.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1659037961/porfolio-gpitrella_ir6xmz.jpg",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684189010/porfolio-gpitrella_uzpttc.webp",
     title: "Porfolio",
     description: `In this App you can see everything about my studies, professional career, projects and more. The main 
     used technologies are: React JS, TypeScript, SASS, Lotties Integration.`,
     techs: ["React JS", "TypeScript", "Sequelize", "Express", "Postgress"],
   },
   {
-    repo: "https://dropshipapps.club/",
+    repo: "",
     live: "https://dropshipapps.club/",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1664194866/Dropship_g7ypnl.jpg",
-    title: "Landing Page DropShip App",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684189420/Dropship_g7_qrb2jm.webp",
+    title: "Landing Page DropShip",
     description: `Development of Landing Page to dropshipping automation tool for Shopify. The main stacks 
     used were WordPress, Elementor, Vultr, Runcloud, Cloudflare.`,
     techs: ["WordPress", "Elementor", "Vultr", "Runcloud", "Cloudflare"],
@@ -62,12 +62,28 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/JUNIOR",
     live: "https://appjunior.vercel.app/",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1661260107/Junior_mx4ld5.jpg",
-    title: "App Junior [In Progress ...]",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684189263/Dropship_g7yp_j25qwi.webp",
+    title: "App Junior",
     description: `App development to help junior programmers gain experience. The main 
     use technologies will be: React JS, JavaScript, MongoDB.`,
     techs: ["React JS", "JavaScript", "Mongoose", "Express", "MongoDB"],
-  } 
+  },
+  {
+    repo: "",
+    live: "https://higherme.com/our-team",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684191098/higherme_zweljj.webp",
+    title: "Our Team Page",
+    description: ``,
+    techs: [""],
+  },
+  {
+    repo: "",
+    live: "https://www.mulgravedentalgroup.com.au/services/all-on-4",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684190846/dental_eumz2l.webp",
+    title: "Dental Services Page",
+    description: ``,
+    techs: [""],
+  }
 ];
 
 

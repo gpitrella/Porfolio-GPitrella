@@ -8,6 +8,9 @@ import Body from "./components/templates/Body/Body";
 import Footer from "./components/templates/Footer/Footer";
 import Background from "./components/atoms/Background/Background";
 import Lotties from "./components/atoms/Lotties/Lotties";
+import Projects from "./components/organisms/Projects/Projects";
+import { Routes, Route } from 'react-router-dom';
+
 
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState<boolean>();
@@ -59,8 +62,11 @@ const Portfolio = () => {
                 scrollIntoView={scrollIntoViewHandler}
               />
               <div className="content">
-                <Body theme={theme} navRefs={navRefs} scrollIntoView={scrollIntoViewHandler}/>
-                <Footer />
+              <Routes>
+                <Route path="/" element={<Body theme={theme} navRefs={navRefs} scrollIntoView={scrollIntoViewHandler}/>}/>
+                <Route path="/projects" element={<Projects />}/>    
+              </Routes> 
+              <Footer />
               </div>
           </motion.div>
         )}
@@ -78,7 +84,7 @@ const Portfolio = () => {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence>      
     </div>
     
   );
