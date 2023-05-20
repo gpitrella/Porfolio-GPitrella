@@ -35,7 +35,7 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/PI-VideoGames",
     live: "https://deploy-videogame.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684188784/videogamesApp2_u1wdzm.webp",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684592322/videogamesAppnEW_v5tvou.webp",
     title: "VideoGames App",
     description: `In this App you can see all details of your favorites videogames. The main 
     used technologies are: React JS, Sequelize, Express, Postgress, API Integration.`,
@@ -44,7 +44,7 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/Porfolio-GPitrella",
     live: "https://porfolio-gpitrella.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684189010/porfolio-gpitrella_uzpttc.webp",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684590448/porfolio-gpitrella-NEW_on91k7.webp",
     title: "Porfolio",
     description: `In this App you can see everything about my studies, professional career, projects and more. The main 
     used technologies are: React JS, TypeScript, SASS, Lotties Integration.`,
@@ -87,8 +87,32 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "",
     live: "https://lp.spotdraft.com/cms_2023",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684525819/Strapt_eqjvrv.png",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684592220/Strapt_eqjvrv_zbd9jn.webp",
     title: "Home Page Services",
+    description: ``,
+    techs: [""],
+  },
+  {
+    repo: "",
+    live: "https://camargoinsurance.com/real-estate-investors",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684591330/CamargoLP_oa7nkr.webp",
+    title: "Home Page Real Estate",
+    description: ``,
+    techs: [""],
+  },
+  {
+    repo: "",
+    live: "https://higherme.com/our-story",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684591677/Our-Story2_u4n5ui.webp",
+    title: "Our Story Page",
+    description: ``,
+    techs: [""],
+  },
+  {
+    repo: "",
+    live: "https://www.sendible.com/",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684592086/Marketing_omkdpo.webp",
+    title: "Home Page Marketing",
     description: ``,
     techs: [""],
   }
