@@ -26,7 +26,7 @@ export const ProjectsList: IProjectsList[] = [
   {
     repo: "https://github.com/gpitrella/PF-FrontEnd",
     live: "https://techmarketfront.vercel.app",
-    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684188559/TechMarket_1_hhllap.webp",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684526983/TechMarket1_ii0urn.webp",
     title: "Tech Market App",
     description: `In this App you can buy any tech product and use the App like user or admin. The main 
     used technologies are: React JS, Redux, SendGrid, Sequelize, Express, Postgress.`,
@@ -81,6 +81,14 @@ export const ProjectsList: IProjectsList[] = [
     live: "https://www.mulgravedentalgroup.com.au/services/all-on-4",
     image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684190846/dental_eumz2l.webp",
     title: "Dental Services Page",
+    description: ``,
+    techs: [""],
+  },
+  {
+    repo: "",
+    live: "https://lp.spotdraft.com/cms_2023",
+    image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684525819/Strapt_eqjvrv.png",
+    title: "Home Page Services",
     description: ``,
     techs: [""],
   }

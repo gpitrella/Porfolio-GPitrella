@@ -7,7 +7,7 @@
   cursor: pointer;
   -webkit-backface-visibility: hidden;
   &:hover > .overflow > .content_art {
-    transform: translateY(0) translateZ(0);
+    transform: translateY(-4px) translateZ(0);
   }
 }
 .overflow {
@@ -31,7 +31,7 @@
   height: auto;
   z-index: 100;
   -webkit-backface-visibility: hidden;
-  transform: translateY(100%) translateZ(0);
+  transform: translateY(96%) translateZ(0);
   transition: transform 450ms ease-out;
 }
 .content_art h4 {
@@ -40,7 +40,7 @@
 }
 .nopadding {
    padding: 0 !important;
-   margin: -3px -1px !important;
+   margin: 0px 0px !important;
 }
 .links_details {
   display: flex;

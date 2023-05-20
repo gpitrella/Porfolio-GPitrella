@@ -7,11 +7,8 @@
 .button_projects{
   position: fixed;
   rotate: 90deg;
-  right: -72px;
+  right: -65px;
   top: 250px;
-}
-.button_projects span{
-  padding: 3px 0px!important;
 }
 @media (max-width: 1080px) {
   .section {
