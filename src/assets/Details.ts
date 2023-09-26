@@ -16,7 +16,7 @@ export interface IProjectsList {
 export const ProjectsList: IProjectsList[] = [
   {
     repo: "",
-    live: "https://laquastore.com.ar",
+    live: "https://laquastore.com",
     image: "https://res.cloudinary.com/djgghmpgh/image/upload/v1684188161/LAqua6x6_uoqqxi.webp",
     title: "Beauty E-commerce",
     description: `This is a full Web Page, you can buy any product in the store. The main used
