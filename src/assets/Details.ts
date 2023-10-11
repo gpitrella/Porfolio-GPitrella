@@ -152,12 +152,11 @@ export interface IAboutMe {
 export const AboutMe: IDetails = {
   title: "About Me",
   text: [
-    `Hi! I'm Gabriel Full Stack Developer graduated from Industrial Engineering 
-    with more than 3 years of practical experience in the design, development and implementation of 
-    applications and solutions using technologies such as TypeScript, JavaScript, NodeJS, ReactJS, Express, 
-    PostgreSQL, MongoDB among other related technologies and with more than 14 years of experience as an Engineer. 
-    I worked at Toyota Argentina for more than 7 years, which strengthened my analytical thinking, effective 
-    problem solving, teamwork, communication and continuous improvement. You can download my full resume below.`,
+    `Full Stack Developer with more than 4 years of practical experience in the design, development, 
+    efficient application implementations and solutions using technologies such as JavaScript, TypeScript, 
+    NodeJS, ReactJS, Express, PostgreSQL, MongoDB among other related technologies and with more than 14 
+    years of experience as Industrial Engineer. I worked for Toyota Argentina for more than 7 years, which 
+    strengthened my analytical thinking, effective problem solving, teamwork, communication and continuous improvement.`,
     `My main soft skills are:`,
   ],
 };
